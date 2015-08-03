@@ -33,7 +33,7 @@
             </objects>
             <point key="canvasLocation" x="1478" y="-287"/>
         </scene>
-        <!--Item 2-->
+        <!--Gestures-->
         <scene sceneID="3wf-U8-G89">
             <objects>
                 <viewController id="wKC-jQ-WSy" sceneMemberID="viewController">
@@ -46,7 +46,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="4uw-NS-sPL"/>
+                    <tabBarItem key="tabBarItem" title="Gestures" image="Gestures.png" id="4uw-NS-sPL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m4p-rT-f4t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -92,6 +92,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Gestures.png" width="30" height="30"/>
         <image name="Players.png" width="30" height="30"/>
     </resources>
 </document>
