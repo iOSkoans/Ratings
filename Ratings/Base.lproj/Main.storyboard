@@ -4,16 +4,16 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Players-->
         <scene sceneID="50R-73-ASP">
             <objects>
-                <tableViewController id="MQB-Bx-4e2" sceneMemberID="viewController">
+                <tableViewController id="MQB-Bx-4e2" customClass="PlayersViewController" customModule="Ratings" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="uFT-xl-UGM">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="nwC-dP-jKg">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlayerCell" id="nwC-dP-jKg">
                                 <rect key="frame" x="0.0" y="86" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nwC-dP-jKg" id="XHs-Pz-FLe">
@@ -27,7 +27,7 @@
                             <outlet property="delegate" destination="MQB-Bx-4e2" id="lbn-xI-AeK"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="ryW-GO-Hby"/>
+                    <navigationItem key="navigationItem" title="Players" id="ryW-GO-Hby"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PmB-Jd-SsD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -74,8 +74,8 @@
         <!--Players-->
         <scene sceneID="OdY-xN-arr">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2jZ-fP-gIv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Players" id="DFi-tP-X0h"/>
+                <navigationController title="Players" automaticallyAdjustsScrollViewInsets="NO" id="2jZ-fP-gIv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Players" image="Players.png" id="DFi-tP-X0h"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vhc-Yz-9hL">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -91,4 +91,7 @@
             <point key="canvasLocation" x="666" y="-287"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Players.png" width="30" height="30"/>
+    </resources>
 </document>
