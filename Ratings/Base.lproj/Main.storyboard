@@ -52,10 +52,10 @@
             </objects>
             <point key="canvasLocation" x="695" y="504"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--View Controller-->
         <scene sceneID="owL-KB-gKa">
             <objects>
-                <tabBarController id="gIS-oh-hcK" sceneMemberID="viewController">
+                <tabBarController id="gIS-oh-hcK" customClass="ViewController" customModule="Ratings" customModuleProvider="target" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="74j-st-vfe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -71,11 +71,11 @@
             </objects>
             <point key="canvasLocation" x="-125" y="174"/>
         </scene>
-        <!--Item-->
+        <!--Players-->
         <scene sceneID="OdY-xN-arr">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2jZ-fP-gIv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="DFi-tP-X0h"/>
+                    <tabBarItem key="tabBarItem" title="Players" id="DFi-tP-X0h"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vhc-Yz-9hL">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
