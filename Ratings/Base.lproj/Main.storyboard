@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PlayerCell" rowHeight="55" id="nwC-dP-jKg">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PlayerCell" rowHeight="55" id="nwC-dP-jKg" customClass="PlayerCell" customModule="Ratings" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="86" width="600" height="55"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nwC-dP-jKg" id="XHs-Pz-FLe">
@@ -37,6 +37,11 @@
                                         </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="gameLabel" destination="wkQ-sY-2Wr" id="7ng-KL-hZk"/>
+                                    <outlet property="nameLabel" destination="UBb-3P-5e2" id="EHY-md-JVV"/>
+                                    <outlet property="ratingImageView" destination="3pX-mJ-CYy" id="vQW-7D-4c6"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
