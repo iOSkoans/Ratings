@@ -11,6 +11,8 @@ import UIKit
 class GamePickerViewController: UITableViewController {
 
     var games: [String]!
+    var selectedGame: String? = nil
+    var selectedGameIndex: Int? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,12 +48,35 @@ class GamePickerViewController: UITableViewController {
 
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCellWithIdentifier("GameCell", forIndexPath: indexPath) 
         cell.textLabel?.text = games[indexPath.row]
+        
+        if indexPath.row == selectedGameIndex {
+            cell.accessoryType = .Checkmark
+        } else {
+            cell.accessoryType = .None
+        }
 
         return cell
     }
 
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+        if let index = selectedGameIndex {
+            let cell = tableView.cellForRowAtIndexPath(NSIndexPath(forRow: index, inSection: 0))
+            cell?.accessoryType = .None
+        }
+        
+        selectedGameIndex = indexPath.row
+        selectedGame = games[indexPath.row]
+        
+        let cell = tableView.cellForRowAtIndexPath(indexPath)
+        cell?.accessoryType = .Checkmark
+        
+    }
 
     /*
     // Override to support conditional editing of the table view.
