@@ -15,6 +15,15 @@ class PlayerDetailsViewController: UITableViewController {
     
     var player: Player!
     
+    required init?(coder aDecoder: NSCoder) {
+        print("init PlayerDetailsViewController")
+        super.init(coder: aDecoder)
+    }
+    
+    deinit {
+        print("deinit PlayerDetailsViewController")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
