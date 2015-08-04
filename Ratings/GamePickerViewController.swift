@@ -22,6 +22,9 @@ class GamePickerViewController: UITableViewController {
                  "Spin the Bottle",
                  "Texas Hold'em Poker",
                  "Tic-Tac-Toe"]
+        if let game = selectedGame {
+            selectedGameIndex = games.indexOf(game)
+        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -113,14 +116,23 @@ class GamePickerViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "SaveSelectedGame" {
+            if let cell = sender as? UITableViewCell {
+                let indexPath = tableView.indexPathForCell(cell)
+                selectedGameIndex = indexPath?.row
+                if let index = selectedGameIndex {
+                    selectedGame = games[index]
+                }
+            }
+        }
     }
-    */
+
 
 }

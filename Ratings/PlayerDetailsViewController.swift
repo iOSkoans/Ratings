@@ -14,6 +14,16 @@ class PlayerDetailsViewController: UITableViewController {
     @IBOutlet weak var detailLabel: UILabel!
     
     var player: Player!
+    var game:String = "Chess"
+    
+    @IBAction func selectedGame(segue: UIStoryboardSegue) {
+        if let gamePickerViewController = segue.sourceViewController as? GamePickerViewController,
+            selectedGame = gamePickerViewController.selectedGame {
+                print(selectedGame)
+                detailLabel.text = selectedGame
+                game = selectedGame
+        }
+    }
     
     required init?(coder aDecoder: NSCoder) {
         print("init PlayerDetailsViewController")
@@ -26,12 +36,7 @@ class PlayerDetailsViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        detailLabel.text = game
     }
 
     override func didReceiveMemoryWarning() {
@@ -47,7 +52,12 @@ class PlayerDetailsViewController: UITableViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "SavePlayerDetail" {
-            player = Player(name: self.nameTextField.text!, game: "Chess", rating: 1)
+            player = Player(name: self.nameTextField.text!, game: game, rating: 1)
+        }
+        if segue.identifier == "PickGame" {
+            if let gamePickerViewController = segue.destinationViewController as? GamePickerViewController {
+                gamePickerViewController.selectedGame = game
+            }
         }
     }
 
