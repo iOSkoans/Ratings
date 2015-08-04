@@ -1,25 +1,15 @@
 //
-//  PlayersViewController.swift
+//  PlayerDetailsViewController.swift
 //  Ratings
 //
-//  Created by Calvin Cheng on 3/8/15.
+//  Created by Calvin Cheng on 4/8/15.
 //  Copyright © 2015 Hello HQ Pte. Ltd. All rights reserved.
 //
 
 import UIKit
 
-class PlayersViewController: UITableViewController {
+class PlayerDetailsViewController: UITableViewController {
 
-    @IBAction func cancelToPlayersViewController(segue: UIStoryboardSegue) {
-        
-    }
-    
-    @IBAction func savePlayerDetail(segue: UIStoryboardSegue) {
-        
-    }
-    
-    var players: [Player] = playersData
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -39,42 +29,23 @@ class PlayersViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 0
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return players.count
+        return 0
     }
 
+    /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("PlayerCell", forIndexPath: indexPath) as! PlayerCell
-        let player = players[indexPath.row] as Player
-        
-        cell.nameLabel.text = player.name
-        cell.gameLabel.text = player.game
-        cell.ratingImageView.image = self.imageForRating(player.rating)
-        
+        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+
+        // Configure the cell...
+
         return cell
     }
-    
-    func imageForRating(rating:Int) -> UIImage? {
-        switch rating {
-        case 1:
-            return UIImage(named: "1StarSmall")
-        case 2:
-            return UIImage(named: "2StarsSmall")
-        case 3:
-            return UIImage(named: "3StarsSmall")
-        case 4:
-            return UIImage(named: "4StarsSmall")
-        case 5:
-            return UIImage(named: "5StarsSmall")
-        default:
-            return nil
-        }
-    }
-
+    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -120,7 +91,5 @@ class PlayersViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    
-    
 
 }
