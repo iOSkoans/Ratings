@@ -151,7 +151,7 @@
         <!--Choose Game-->
         <scene sceneID="lkq-W2-mIL">
             <objects>
-                <tableViewController title="Choose Game" id="60d-m8-jpP" sceneMemberID="viewController">
+                <tableViewController title="Choose Game" id="60d-m8-jpP" customClass="GamePickerViewController" customModule="Ratings" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="c1y-e5-YTa">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

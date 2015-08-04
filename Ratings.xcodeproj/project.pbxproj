@@ -43,6 +43,7 @@
 		3E1656841B6F4AED00BC4788 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1656831B6F4AED00BC4788 /* SampleData.swift */; };
 		3E1656861B6F988300BC4788 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1656851B6F988300BC4788 /* PlayerCell.swift */; };
 		3E16568A1B70275200BC4788 /* PlayerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1656891B70275200BC4788 /* PlayerDetailsViewController.swift */; };
+		3EBF1A581B7069A100279207 /* GamePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBF1A571B7069A100279207 /* GamePickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,7 @@
 		3E1656831B6F4AED00BC4788 /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		3E1656851B6F988300BC4788 /* PlayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
 		3E1656891B70275200BC4788 /* PlayerDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerDetailsViewController.swift; sourceTree = "<group>"; };
+		3EBF1A571B7069A100279207 /* GamePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 				3E1656831B6F4AED00BC4788 /* SampleData.swift */,
 				3E1656851B6F988300BC4788 /* PlayerCell.swift */,
 				3E1656891B70275200BC4788 /* PlayerDetailsViewController.swift */,
+				3EBF1A571B7069A100279207 /* GamePickerViewController.swift */,
 			);
 			path = Ratings;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EBF1A581B7069A100279207 /* GamePickerViewController.swift in Sources */,
 				3E1656861B6F988300BC4788 /* PlayerCell.swift in Sources */,
 				3E1656821B6F497200BC4788 /* Player.swift in Sources */,
 				3E1656231B6F3D2A00BC4788 /* ViewController.swift in Sources */,
@@ -607,6 +611,7 @@
 				3E1656471B6F3D2A00BC4788 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3E1656481B6F3D2A00BC4788 /* Build configuration list for PBXNativeTarget "RatingsTests" */ = {
 			isa = XCConfigurationList;
@@ -615,6 +620,7 @@
 				3E16564A1B6F3D2A00BC4788 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3E16564B1B6F3D2A00BC4788 /* Build configuration list for PBXNativeTarget "RatingsUITests" */ = {
 			isa = XCConfigurationList;
@@ -623,6 +629,7 @@
 				3E16564D1B6F3D2A00BC4788 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
