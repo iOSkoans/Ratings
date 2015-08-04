@@ -10,15 +10,22 @@ import UIKit
 
 class PlayersViewController: UITableViewController {
 
+    var players: [Player] = playersData
+    
     @IBAction func cancelToPlayersViewController(segue: UIStoryboardSegue) {
         
     }
     
     @IBAction func savePlayerDetail(segue: UIStoryboardSegue) {
-        
+        if let playerDetailsViewController = segue.sourceViewController as? PlayerDetailsViewController {
+            
+            players.append(playerDetailsViewController.player)
+            
+            // render the newly added player in a new row
+            let indexPath = NSIndexPath(forRow: players.count - 1, inSection: 0)
+            tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+        }
     }
-    
-    var players: [Player] = playersData
     
     override func viewDidLoad() {
         super.viewDidLoad()
